@@ -26,7 +26,7 @@ placeholder='Password'
 name='password'
 />
 <input type="submit" className='submitBtn' 
-value='ENTER'
+value='REGISTER'
 />
     </form>
     
