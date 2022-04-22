@@ -7,13 +7,15 @@ const Main = () => {
 
   const[user, setUser]= useState(1);
   const[loading, setLoading]=useState(true)
+  const[render,setRender]=useState(false)
+  const handleclick = ()=> setRender(!render)
     return (
     <div className="mainBlock">
 
-      <Login/>
+      {render ? <Register/>: <Login/>}
       <span className="underline">
-Not Registered?
-<button>click here to register</button>
+{render? 'Registered?': 'Not Registered?'}
+<button onClick={handleclick}>{render? 'Login': 'Click here to Register'}</button>
 
 
       </span>
