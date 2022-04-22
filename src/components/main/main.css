@@ -1,0 +1,27 @@
+.mainBlock{
+    border-radius: 5px;
+    box-sizing: border-box;
+    text-align: center;
+    padding: 20px;
+    width: 50%;
+    margin: 100px auto;
+    display: table;
+    background: white;
+    
+}
+.underline{
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+span{
+    font-size: 1.2rem;
+    
+}
+span>button{
+    background: none;
+border: none;
+    border-radius: 3px;
+    text-decoration: underline;
+    font-size: 1.2rem;
+}
