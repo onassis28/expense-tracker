@@ -21,3 +21,7 @@ form{
     border-radius: 1rem;
     cursor: pointer;
 }
+.error{
+    padding: 10px;
+    background: red;
+}

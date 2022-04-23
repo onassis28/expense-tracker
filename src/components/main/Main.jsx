@@ -3,12 +3,18 @@ import './main.css'
 import { useState } from 'react'
 import Login from './forms/Login'
 import Register from './forms/register'
+import Fire from '../../config/Fire'
 const Main = () => {
 
   const[user, setUser]= useState(1);
   const[loading, setLoading]=useState(true)
   const[render,setRender]=useState(false)
   const handleclick = ()=> setRender(render =>!render)
+
+
+  componentDidMount(){
+    authListener();
+  }
     return (
     <div className="mainBlock">
 

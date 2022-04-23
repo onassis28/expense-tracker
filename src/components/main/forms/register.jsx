@@ -2,7 +2,7 @@ import React from 'react'
 import './login.css'
 import { useState } from 'react'
 import Fire from '../../../config/Fire'
-import { FirebaseError } from 'firebase/app'
+
 import { getAuth, createUserWithEmailAndPassword } from "firebase/auth";
 
 const Register = () => {
@@ -33,13 +33,15 @@ const register =(e)=>{
       .catch((error) => {
          setFireErrors(error.message) 
         // ..
+        console.log(error)
       })};
 
-      const errorNotification =() => fireErrors ? (<div className='error'>{fireErrors}</div>): '';
+
+     
     
   return (
     <>
-    {errorNotification}
+   {fireErrors && <div className='error'>{fireErrors}</div>}
     <form action="">
 <input type="text"
 className='loginField'
